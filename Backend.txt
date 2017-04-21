@@ -1,4 +1,5 @@
-There are currently quite a few ways to finding a servers backend and it honestly isn't hard. If you want to find out how to protect from people finding your backend server you can refer to BackendProt.txt
+There are currently quite a few ways to finding a servers backend and it honestly isn't hard. If you want to find out
+how to protect from people finding your backend server you can refer to BackendProt.txt
 
 Throughout this will have references in curly brackets by numbers referring to tools with the places to find them.
 +----------------------------------------------------------------------+
