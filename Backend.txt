@@ -3,31 +3,51 @@ There are currently quite a few ways to finding a servers backend and it honestl
 Throughout this will have references in curly brackets by numbers referring to tools with the places to find them.
 +----------------------------------------------------------------------+
 
-The first and most checked method is just taking a look at the targets subdomains since they will, most of the time still have the backend servers address. The way of finding the targets subdomains is by using tools {1} that use a wordlist and just check if that subdomains exists for the given target. You can use something like Wordpie {2} to generate a wordlist yourself with all numbers, letters and symbols with a minimum of 1 to a maximum to something like 16, but that will take a long time unless you can find lists already out there but the scan will also take quite some time.
+The first and most checked method is just taking a look at the targets subdomains since they will, most of the time
+still have the backend servers address. The way of finding the targets subdomains is by using tools {1} that use a
+wordlist and just check if that subdomains exists for the given target. You can use something like Wordpie {2} to
+generate a wordlist yourself with all numbers, letters and symbols with a minimum of 1 to a maximum to something
+like 16, but that will take a long time unless you can find lists already out there but the scan will also take
+quite some time.
 
 
-The other way you can try finding the backend is another tools called Crimeflare {3}, and if can't reach their site all the time you can use their page that has zip files {4} so you can do offline searches.
+The other way you can try finding the backend is another tools called Crimeflare {3}, and if can't reach their site
+all the time you can use their page that has zip files {4} so you can do offline searches.
 
 
-It's also possible that some websites will have your targets IP/NS history {5}. Even if it has your target in it's database with it's previous A records or NS records doesn't mean the target has already switched hosts. Typically after getting protection the target will be on the same host, the same server so it'll have the same backend. It is possible your target has a new host or a new backend but it's always worth the check.
+It's also possible that some websites will have your targets IP/NS history {5}. Even if it has your target in it's
+database with it's previous A records or NS records doesn't mean the target has already switched hosts. Typically
+after getting protection the target will be on the same host, the same server so it'll have the same backend. It is
+possible your target has a new host or a new backend but it's always worth the check.
 
 
-Another method you can try is taking a look at the DNS records {6} and see if you can find any kinds of links there that reference the host.
+Another method you can try is taking a look at the DNS records {6} and see if you can find any kinds of links there
+that reference the host.
 
 
-If your target has newletters then you can use a fake mail that allows to view the source {7} and check the emails headers to see if it discloses it's backend. If your target has something like a forum that allows you to change the avatar using an image through an URL you can use services that IP log with image extensions {8}. If the target has a login form that doesn't require you to confirm the email but allows you to choose the option "forgot password" then signup with a temp mail that allows you to view the emails headers {7}.
+If your target has newletters then you can use a fake mail that allows to view the source {7} and check the emails
+headers to see if it discloses it's backend. If your target has something like a forum that allows you to change the
+avatar using an image through an URL you can use services that IP log with image extensions {8}. If the target has a
+login form that doesn't require you to confirm the email but allows you to choose the option "forgot password" then
+signup with a temp mail that allows you to view the emails headers {7}.
 
 
-Something else you can try if looking through and directory listing pages or default error pages since sometimes they will disclose the backend instead of showing the domain which typically only happens on domains that aren't using a shared host/a virtual host.
+Something else you can try if looking through and directory listing pages or default error pages since sometimes they
+will disclose the backend instead of showing the domain which typically only happens on domains that aren't using a
+shared host/a virtual host.
 
 
-You could also use services like Backlink {9} to see if the backend server (again, typically only works for private / non-shared/vhost servers) mention the target domain.
+You could also use services like Backlink {9} to see if the backend server (again, typically only works for private /
+non-shared/vhost servers) mention the target domain.
 
 
-If looking for a backlink doesn't work then you can try using tools {10} to see if anything on the website links to it's own backend or another server of theirs which isn't protected which is what I had used to find one sites backend before and finding GhostSec's login page for their website {11}.
+If looking for a backlink doesn't work then you can try using tools {10} to see if anything on the website links to
+it's own backend or another server of theirs which isn't protected which is what I had used to find one sites backend
+before and finding GhostSec's login page for their website {11}.
 
 
-May also be worth if you have the time and know what host they use to scan all the IP ranges {12} and checking the reverse IP {13} to see if you can find the backend that way.
+May also be worth if you have the time and know what host they use to scan all the IP ranges {12} and checking the
+reverse IP {13} to see if you can find the backend that way.
 +----------------------------------------------------------------------+
 
 {1} · https://dnsdumpster.com/
